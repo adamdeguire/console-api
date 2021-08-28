@@ -5,7 +5,7 @@ const { handle404, requireOwnership } = require('../../lib/custom_errors')
 const removeBlanks = require('../../lib/remove_blank_fields')
 const Post = require('../models/post')
 
-router.get('/posts', requireToken, (req, res, next) => {
+router.get('/home', requireToken, (req, res, next) => {
   Post.find()
     .populate('owner')
 		.then(posts => posts.map((post) => post.toObject()))
