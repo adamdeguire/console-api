@@ -5,8 +5,8 @@ const mongooseBaseName = 'socialcluster'
 
 // create the mongodb uri for development and test
 const database = {
-  development: `mongodb+srv://admin:SR8xFMJVFbHHoKZj@socialcluster.t44kc.mongodb.net/${mongooseBaseName}-development?retryWrites=true`,
-  test: `mongodb+srv://admin:SR8xFMJVFbHHoKZj@socialcluster.t44kc.mongodb.net/${mongooseBaseName}-test?retryWrites=true`
+  development: `mongodb+srv://admin:hyaudCDKzCFJvF4d@console.nwpp4.mongodb.net/${mongooseBaseName}-development?retryWrites=true&w=majority`,
+  test: `mongodb+srv://admin:hyaudCDKzCFJvF4d@console.nwpp4.mongodb.net/${mongooseBaseName}?retryWrites=true&w=majority`
 }
 
 // Identify if development environment is test or development
