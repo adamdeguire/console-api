@@ -1,12 +1,12 @@
 'use strict'
 
 // creating a base name for the mongodb
-const mongooseBaseName = 'socialcluster'
+const mongooseBaseName = 'console'
 
 // create the mongodb uri for development and test
 const database = {
-  development: `mongodb+srv://admin:hyaudCDKzCFJvF4d@console.nwpp4.mongodb.net/${mongooseBaseName}-development?retryWrites=true&w=majority`,
-  test: `mongodb+srv://admin:hyaudCDKzCFJvF4d@console.nwpp4.mongodb.net/${mongooseBaseName}?retryWrites=true&w=majority`
+  development: process.env.DB_URI,
+  test: process.env.DB_URI
 }
 
 // Identify if development environment is test or development
