@@ -5,8 +5,8 @@ const mongooseBaseName = 'console'
 
 // create the mongodb uri for development and test
 const database = {
-  development: process.env.DB_URI,
-  test: process.env.DB_URI
+  development: `mongodb+srv://admin:hyaudCDKzCFJvF4d@console.nwpp4.mongodb.net/Console?retryWrites=true&w=majority`,
+  test: `mongodb+srv://admin:hyaudCDKzCFJvF4d@console.nwpp4.mongodb.net/Console?retryWrites=true&w=majority`
 }
 
 // Identify if development environment is test or development

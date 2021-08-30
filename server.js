@@ -6,7 +6,7 @@ const cors = require('cors')
 // require route files
 const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
-const postRoutes = require('./app/routes/post_routes')
+const logRoutes = require('./app/routes/log_routes')
 const commentRoutes = require('./app/routes/comment_routes')
 const profileRoutes = require('./app/routes/profile_routes')
 
@@ -64,7 +64,7 @@ app.get('/', (req, res) => res.send('social app backend is happy, grateful for y
 
 app.use(exampleRoutes)
 app.use(userRoutes)
-app.use(postRoutes)
+app.use(logRoutes)
 app.use(commentRoutes)
 app.use(profileRoutes)
 
