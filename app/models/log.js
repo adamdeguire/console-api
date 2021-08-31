@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const logSchema = new mongoose.Schema({
   title: String,
   content: String,
+  language: String,
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
