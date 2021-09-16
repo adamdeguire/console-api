@@ -23,8 +23,8 @@ const auth = require('./lib/auth')
 
 // define server and client ports
 // used for cors and local port declaration
-const serverDevPort = 4741
-const clientDevPort = 7165
+const serverDevPort = 3080
+const clientDevPort = 3080
 
 // establish database connection
 // use new version of URL parser
@@ -58,9 +58,7 @@ app.use(express.urlencoded({ extended: true }))
 // log each request as it comes in for debugging
 app.use(requestLogger)
 
-// IMPORTANT
-// Access the routes
-app.get('/', (req, res) => res.send('social app backend is happy, grateful for your visit and open for business as well'))
+app.get('/', (req, res) => res.send('console api'))
 
 app.use(exampleRoutes)
 app.use(userRoutes)
