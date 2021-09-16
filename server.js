@@ -23,7 +23,7 @@ const auth = require('./lib/auth')
 
 // define server and client ports
 // used for cors and local port declaration
-const serverDevPort = 3080
+const serverDevPort = 3081
 const clientDevPort = 3080
 
 // establish database connection
