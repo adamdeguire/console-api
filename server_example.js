@@ -29,6 +29,7 @@ const clientDevPort = 7165 // MAGIC PORT Number FOR CLIENT
 // use new version of URL parser
 // use createIndex instead of deprecated ensureIndex
 mongoose.connect(db, {
+  ssl: true,
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
