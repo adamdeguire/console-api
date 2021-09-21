@@ -1,0 +1,3 @@
+const AZURE_STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=consolephotos;AccountKey=Z1oJ86icUEyHXEuZEf8NdGw2E/ezPhOeVTN6PQFt+zHs7VBAjUHMbcUHGMBrcl2aJx8f+ZmmyQLpJNkGl34ETA==;EndpointSuffix=core.windows.net'
+
+module.exports = AZURE_STORAGE_CONNECTION_STRING

@@ -18,4 +18,14 @@ router.get('/profile/:username', requireToken, (req, res, next) => {
 		.catch(next)
 })
 
+router.patch('/profile-photo', requireToken, (req, res, next) => {
+  User.findById(req.user.id)
+    .then(user => {
+      user.profilePhoto = req.body.filename
+      return user.save()
+    })
+    .then(() => res.sendStatus(204))
+    .catch(next)
+})
+
 module.exports = router
